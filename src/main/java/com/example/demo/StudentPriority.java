@@ -1,10 +1,14 @@
 package com.example.demo;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 @Entity
 @Data
+@Builder
+@AllArgsConstructor
 public class StudentPriority {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
